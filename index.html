@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fc0c61b568.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- this script let us use font-awesome icons as they are -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="public/logo.png" class="logo" alt="logo" />
+          <ul id = "sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Cantact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Engineer by Choice... <br />Developer</p>
+          <h1>
+            Hi I`m <span>Mayank</span><br />
+            Soni from India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--     about    -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="public/about.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p class="para-col-2-1">
+              I`m a proficient third-year electrical engineering student with
+              expertise in technologies such as React, Node.js, MongoDB,
+              Next.js, HTML, CSS, JavaScript for development, and C++ for
+              competitive programming. My technical skills, combined with
+              effective communication, reflect my passion for the ever-evolving
+              tech sector.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab(event,'skill')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab(event,'experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab(event,'education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skill">
+              <ul>
+                <li>
+                  <span>Frontend and Backend</span> <br />React, Node.js,
+                  MongoDB, and Next.js <br />
+                  with a keen interest in UI/UX design principles.
+                </li>
+                <!-- <li><span>"Experienced in web development using technologies such as React, Node.js, and MongoDB, with an emerging interest in UI/UX design."</span></li> -->
+                <li><span>DSA and competitive pogramming </span><br />C++</li>
+                <li>
+                  <span>Web development</span> <br />
+                  Web-app development <br />
+                  JavaScript
+                </li>
+              </ul>
+            </div>
+
+            <!-- experience -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021-22</span><br />Making web app from scratch</li>
+                <!-- <li><span>"Experienced in web development using technologies such as React, Node.js, and MongoDB, with an emerging interest in UI/UX design."</span></li> -->
+                <li>
+                  <span>2022-Current </span><br />
+                  DSA and CP using C++<br />⭐⭐⭐at codeCheif
+                </li>
+                <li>
+                  <span>2022-Current </span><br />
+                  Web-app development <br />
+                  Full Stack
+                </li>
+              </ul>
+            </div>
+            <!-- education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-25</span><br />
+                  Btech from Harcourt Butler Technical University
+                </li>
+                <li>
+                  <span>2019-20</span><br />
+                  Secondary Education
+                </li>
+                <li>
+                  <span>2022-23</span><br />Completed Course of Python Beginner
+                  from Coursera
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  ----------- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h1 class="service-title">Frontend development</h1>
+            <p class="service-desc">
+              Creating web-apps with the knowledge of <br />
+              React, HTML, CSS, JS
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h1 class="service-title">Backend development</h1>
+            <p class="service-desc">
+              Managing backend with emersive technologies like <br />Nodejs ,
+              MongoDB and Express
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h1 class="service-title">Part time Tutor</h1>
+            <p class="service-desc">For 10th and 12th students <br /></p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------portflio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="public/work-1.png" alt="work1" />
+            <div class="layer">
+              <h3>Real State Bussiness Web-app</h3>
+              <p>
+                Revenue based funding and execution designed for early stage
+                founders
+                <br />
+                Made with next.js
+              </p>
+              <a
+                href="https://digital-bussiness-need-to-learn-more-2-fkrcvmd88.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <!-- add here -->
+            </div>
+          </div>
+          <div class="work">
+            <img src="public/work-2.png" alt="work1" />
+            <div class="layer">
+              <h3>E-Commerce website</h3>
+              <p>
+                Fully responsive full stack ecommerce website made <br />
+                React and Strapi for CMS.
+              </p>
+              <a href="https://github.com/Mayank06711/E-commerce"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <!-- add here -->
+            </div>
+          </div>
+          <div class="work">
+            <img src="public/work-3.png" alt="work1" />
+            <div class="layer">
+              <h3>Food delivery clone web-app</h3>
+              <p>
+                Responsive made compltely with <br />
+                html , css and js
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <!-- add here -->
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Mayank06711" class="btn">See More</a>
+        <!-- add github link -->
+      </div>
+    </div>
+
+    <!-- ----------------------contact section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> mayankatwork67@gmail.com
+            </p>
+            <p>
+              <a href="tel:9125256906" style="text-decoration: none"
+                ><i class="fa-solid fa-phone"></i></a
+              >9125256906
+            </p>
+
+            <div class="social-icon">
+              <!-- add social links -->
+              <a
+                href="https://www.linkedin.com/in/mayank-soni-89b006233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bm6EEllMlQaiAOnVC6g%2Fd8Q%3D%3D"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/mayank_6711/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a
+                href="https://wa.me/+919125256906?text=Hello%20there!"
+                target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+            <a href="public/Mayank Soni CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Message"
+                style="resize: none"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn2"
+                style="background: #ff0051e5"
+                onclick=""
+              >
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+            <!-- this will be shown when submit form -->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @Mayank Soni.Since 2021</p>
+      </div>
+    </div>
+
+    <!-- javascript -->
+     <!-- <script>
+      let tabLinks = document.getElementsByClassName("tab-links");
+      let tabContent = document.getElementsByClassName("tab-contents");
+      const openTab = (event,tabName) => {
+        for (tablink of tabLinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabContent) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      };
+    </script> --> 
+    <!-- <script>
+      let sideMenu = document.getElementById("sideMenu");
+      const openMenu = () => {
+        sideMenu.style.right = "0";
+      };
+      const closeMenu = () => {
+        sideMenu.style.transition = "all ease 0.5s";
+        sideMenu.style.right = `-${sideMenu.offsetWidth}px`;
+      };
+    </script> -->
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzdfiAX6MIemygMFHnCkoSPQTUy1z8dJ-bnz88tIBE4hRt6GknUEiaSf35615PUGCPGdw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+            console.log(
+              "Success! Please wait 1-2 days for the response",
+              response
+            );
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script> 
+  </body>
+</html>
